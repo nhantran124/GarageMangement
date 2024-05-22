@@ -1,19 +1,20 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
 using GarageManagement.Domain.Interfaces;
 using GarageManagement.Infrastructure.Repositories;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace GarageManagement.Infrastructure.ServiceExtension
+namespace GarageManagement.Infrastructure.Extensions
 {
-	public static class ServiceExtension
-	{
-		public static IServiceCollection AddDIServices(this IServiceCollection services)
-		{
-			services.AddScoped<IUnitOfWork, UnitOfWork>();
-			services.AddScoped<IDepartmentRepository, DepartmentRepository>();
-			services.AddScoped<IStaffRepository, StaffRepository>();
-			return services;
-		}
-	}
-}
+    public static class ServiceCollectionExtensions
+    {
+        public static IServiceCollection AddDIServices(this IServiceCollection services)
+        {
+            // Register UnitOfWork
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            // Add other repositories and services here
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IStaffRepository, StaffRepository>();
 
+            return services;
+        }
+    }
+}
