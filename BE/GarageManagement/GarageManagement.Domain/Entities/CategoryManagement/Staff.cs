@@ -12,9 +12,9 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(TypeName = "varchar(15)")]
         [Required]    
-		public string StaffId { get; set; }
+		public string StaffId { get; set; } = DateTime.Now.ToString("yyyyMMddHHmmss");
 
-		[Required]
+        [Required]
 		[Column(TypeName = "varchar(20)")]
 		public string DepartmentId { get; set; }
 

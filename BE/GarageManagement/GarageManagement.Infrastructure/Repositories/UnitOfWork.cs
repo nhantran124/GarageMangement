@@ -10,14 +10,17 @@ namespace GarageManagement.Infrastructure.Repositories
         private readonly DataContext _dataContext;
 
         public IDepartmentRepository Departments { get; }
+        public IStaffRepository AllStaff { get; }
 
         public UnitOfWork(DataContext dataContext,
-            IDepartmentRepository departmentRepository
+            IDepartmentRepository departmentRepository,
+            IStaffRepository staffRepository
             )
 
         {
             _dataContext = dataContext;
             Departments = departmentRepository;
+            AllStaff = staffRepository;
         }
 
         public int Save()

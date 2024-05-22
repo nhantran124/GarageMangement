@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GarageManagement.Api.Controllers
 {
-        [Route("api/[controller]")]
+        [Route("api/department")]
         [ApiController]
         public class DepartmentsController : ControllerBase
         {
@@ -78,8 +78,6 @@ namespace GarageManagement.Api.Controllers
                         return Ok(DepIstDeleted);
                     }
                     return BadRequest();
-                
-           
             }
         }
 }
