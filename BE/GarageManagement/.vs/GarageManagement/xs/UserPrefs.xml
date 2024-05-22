@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{88787D8B-6A07-4E72-BF71-F41AF1D57362}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="GarageManagement.Domain/Entities/RoleDetails.cs">
+    <Files>
+      <File FileName="GarageManagement.Domain/Entities/RoleDetails.cs" Line="17" Column="27" />
+      <File FileName="GarageManagement.Domain/Interfaces/IGenericRepository.cs" Line="5" Column="3" />
+      <File FileName="GarageManagement.Domain/Interfaces/IUnitOfWork.cs" Line="1" Column="1" />
+      <File FileName="GarageManagement.Application/Authentication/RegisterRequest.cs" />
+      <File FileName="GarageManagement.Api/Controllers/WeatherForecastController.cs" />
+      <File FileName="GarageManagement.Application/Class1.cs" />
+      <File FileName="GarageManagement.Application/Authentication/LoginRequest.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GarageManagement" expanded="True">
+            <Node name="GarageManagement.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="GarageManagement.Application" expanded="True">
+              <Node name="Authentication" expanded="True" />
+            </Node>
+            <Node name="GarageManagement.Domain" expanded="True">
+              <Node name="Entities" expanded="True">
+                <Node name="RoleDetails.cs" selected="True" />
+              </Node>
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+            <Node name="GarageManagement.Infrastructure" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GarageManagement.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
