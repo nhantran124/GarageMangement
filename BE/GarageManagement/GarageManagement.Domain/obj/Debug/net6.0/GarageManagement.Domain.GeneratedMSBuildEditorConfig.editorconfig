@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GarageManagement.Domain
-build_property.ProjectDir = /Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/
+build_property.ProjectDir = /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/

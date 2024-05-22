@@ -6492,11 +6492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/GarageManagement.Infrastructure.csproj",
+      "projectUniqueName": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Infrastructure/GarageManagement.Infrastructure.csproj",
       "projectName": "GarageManagement.Infrastructure",
-      "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/GarageManagement.Infrastructure.csproj",
+      "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Infrastructure/GarageManagement.Infrastructure.csproj",
       "packagesPath": "/Users/Nhan_Dev/.nuget/packages/",
-      "outputPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/",
+      "outputPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Nhan_Dev/.nuget/NuGet/NuGet.Config"
@@ -6511,8 +6511,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj": {
-              "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj"
+            "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj": {
+              "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj"
             }
           }
         }

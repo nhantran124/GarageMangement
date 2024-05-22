@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj": {}
+    "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj": {}
   },
   "projects": {
-    "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj": {
+    "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj",
+        "projectUniqueName": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj",
         "projectName": "GarageManagement.Application",
-        "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj",
+        "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Application/GarageManagement.Application.csproj",
         "packagesPath": "/Users/Nhan_Dev/.nuget/packages/",
-        "outputPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/",
+        "outputPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Nhan_Dev/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj": {
-                "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj"
+              "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj": {
+                "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj": {
+    "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj",
+        "projectUniqueName": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj",
         "projectName": "GarageManagement.Domain",
-        "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj",
+        "projectPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj",
         "packagesPath": "/Users/Nhan_Dev/.nuget/packages/",
-        "outputPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/obj/",
+        "outputPath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Nhan_Dev/.nuget/NuGet/NuGet.Config"

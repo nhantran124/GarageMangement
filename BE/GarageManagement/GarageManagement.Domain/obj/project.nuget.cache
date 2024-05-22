@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ypztQXWZNijXMxXpxriFBes/b2nW7tc9wkOFt2zzRmUu2Nw/xO10Eky0ZmWA+Vmt9HMl6Hw86PXl3IJCu5JyXw==",
+  "dgSpecHash": "kdDD7t/m/dEAEt6fQ2O0kitxrKdgVaGFwyyq4w/lga9f8k3Tt96+RIe3pVOBjGq8KqrGav/tiSp8oqENGJPIIQ==",
   "success": true,
-  "projectFilePath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj",
+  "projectFilePath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Domain/GarageManagement.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

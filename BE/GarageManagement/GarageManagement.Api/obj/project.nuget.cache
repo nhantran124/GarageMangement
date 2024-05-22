@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mIONm4SGw4fO91GMKmZhmTP/wHc9REbqK5iZhVIoCccv2VoYYDsyzQu2wRtJOx9QXobB+igr/lTe5H7M7W5x+g==",
+  "dgSpecHash": "reEi9bAWKxSg2wltSSOmAYt55sxA4nz+DKxgRHrKr9vDn650uRF/Jk99zA4l0wthCDCJn+W7TGM2B2XmtYAzOA==",
   "success": true,
-  "projectFilePath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Api/GarageManagement.Api.csproj",
+  "projectFilePath": "/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/GarageManagement.Api.csproj",
   "expectedPackageFiles": [
     "/Users/Nhan_Dev/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/Nhan_Dev/.nuget/packages/microsoft.data.sqlclient/2.1.7/microsoft.data.sqlclient.2.1.7.nupkg.sha512",
