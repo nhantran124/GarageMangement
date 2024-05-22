@@ -20,6 +20,7 @@ builder.Services.AddDIServices();
 // Add scoped services
 builder.Services.AddScoped<IDepartmentApp, DepartmentApp>();
 builder.Services.AddScoped<IStaffApp, StaffApp>();
+builder.Services.AddScoped<ISupplierApp, SupplierApp>();
 
 var app = builder.Build();
 
