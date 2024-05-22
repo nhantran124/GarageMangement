@@ -1,0 +1,15 @@
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/bin/Debug/net6.0/GarageManagement.Application.deps.json
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/bin/Debug/net6.0/GarageManagement.Application.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/bin/Debug/net6.0/GarageManagement.Application.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.csproj.AssemblyReference.cache
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.AssemblyInfoInputs.cache
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.AssemblyInfo.cs
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.csproj.CoreCompileInputs.cache
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/refint/GarageManagement.Application.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/ref/GarageManagement.Application.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/bin/Debug/net6.0/GarageManagement.Domain.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/bin/Debug/net6.0/GarageManagement.Domain.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Application/obj/Debug/net6.0/GarageManagement.Application.csproj.CopyComplete

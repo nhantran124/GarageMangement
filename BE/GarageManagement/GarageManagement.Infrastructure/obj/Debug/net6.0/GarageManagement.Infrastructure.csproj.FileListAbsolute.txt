@@ -1,0 +1,17 @@
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/bin/Debug/net6.0/GarageManagement.Infrastructure.deps.json
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/bin/Debug/net6.0/GarageManagement.Infrastructure.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/bin/Debug/net6.0/GarageManagement.Infrastructure.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.csproj.AssemblyReference.cache
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.AssemblyInfoInputs.cache
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.AssemblyInfo.cs
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/refint/GarageManagement.Infrastructure.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/ref/GarageManagement.Infrastructure.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/bin/Debug/net6.0/GarageManagement.Domain.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/bin/Debug/net6.0/GarageManagement.Domain.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.csproj.CopyComplete
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/bin/Debug/net6.0/GarageManagement.Infrastructure.runtimeconfig.json
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageManagementProject/GarageManagement/GarageManagement.Infrastructure/obj/Debug/net6.0/GarageManagement.Infrastructure.genruntimeconfig.cache
