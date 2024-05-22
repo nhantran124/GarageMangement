@@ -13,6 +13,7 @@ namespace GarageManagement.Infrastructure.Extensions
             // Add other repositories and services here
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IStaffRepository, StaffRepository>();
+            services.AddScoped<ISupplierRepository, SupplierRepository>();
 
             return services;
         }

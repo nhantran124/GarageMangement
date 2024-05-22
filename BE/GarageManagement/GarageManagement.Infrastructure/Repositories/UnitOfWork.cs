@@ -6,21 +6,24 @@ namespace GarageManagement.Infrastructure.Repositories
 {
 	public class UnitOfWork : IUnitOfWork
 
-	{
+	{   
         private readonly DataContext _dataContext;
 
         public IDepartmentRepository Departments { get; }
         public IStaffRepository AllStaff { get; }
+        public ISupplierRepository Suppliers { get; }
 
         public UnitOfWork(DataContext dataContext,
             IDepartmentRepository departmentRepository,
-            IStaffRepository staffRepository
+            IStaffRepository staffRepository,
+            ISupplierRepository supplierRepository
             )
 
         {
             _dataContext = dataContext;
             Departments = departmentRepository;
             AllStaff = staffRepository;
+            Suppliers = supplierRepository;
         }
 
         public int Save()
