@@ -10,7 +10,7 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(TypeName = "varchar(15)")]
         [Required]
-        public string TypeOfVehicle { get; set; }
+        public string TypeOfVehicleId { get; set; } = DateTime.Now.ToString("yyyyMMddHHmmss");
 
         [Required]
         [StringLength(255)]

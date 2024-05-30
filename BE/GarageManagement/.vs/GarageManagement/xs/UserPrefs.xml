@@ -1,43 +1,53 @@
 ﻿<Properties StartupConfiguration="{88787D8B-6A07-4E72-BF71-F41AF1D57362}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.GarageManagement.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="GarageManagement.Domain/Entities/RoleDetails.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GarageManagement.Infrastructure/Data/DataContext.cs">
     <Files>
-      <File FileName="GarageManagement.Domain/Entities/RoleDetails.cs" Line="17" Column="27" />
-      <File FileName="GarageManagement.Domain/Interfaces/IGenericRepository.cs" Line="5" Column="3" />
-      <File FileName="GarageManagement.Domain/Interfaces/IUnitOfWork.cs" Line="1" Column="1" />
-      <File FileName="GarageManagement.Application/Authentication/RegisterRequest.cs" />
-      <File FileName="GarageManagement.Api/Controllers/WeatherForecastController.cs" />
-      <File FileName="GarageManagement.Application/Class1.cs" />
-      <File FileName="GarageManagement.Application/Authentication/LoginRequest.cs" />
+      <File FileName="GarageManagement.Domain/Interfaces/IVehicleRepository.cs" />
+      <File FileName="GarageManagement.Domain/Interfaces/IUnitOfWork.cs" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/VehicleRepository.cs" />
+      <File FileName="GarageManagement.Infrastructure/ServiceExtension/ServiceExtension.cs" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/UnitOfWork.cs" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/GenericRepository.cs" />
+      <File FileName="GarageManagement.Application/Services/SupplierApp.cs" />
+      <File FileName="GarageManagement.Application/Interfaces/IFactoryApp.cs" />
+      <File FileName="GarageManagement.Application/Interfaces/ISupplierApp.cs" />
+      <File FileName="GarageManagement.Application/Services/StaffApp.cs" />
+      <File FileName="GarageManagement.Api/Controllers/SupplierController.cs" />
+      <File FileName="GarageManagement.Infrastructure/Migrations/DataContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="GarageManagement.Domain/Interfaces/IGenericRepository.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Infrastructure/Data/DataContext.cs" Line="11" Column="10" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Interfaces/IDepartmentRepository.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/DepartmentRepository.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Services/VehicleApp.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Interfaces/IVehicleApp.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Entities/CategoryManagement/Vehicle.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/VehicleController.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Program.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Infrastructure/Migrations/20240525035330_Migv4.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GarageManagement" expanded="True">
-            <Node name="GarageManagement.Api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="GarageManagement.Application" expanded="True">
-              <Node name="Authentication" expanded="True" />
-            </Node>
-            <Node name="GarageManagement.Domain" expanded="True">
-              <Node name="Entities" expanded="True">
-                <Node name="RoleDetails.cs" selected="True" />
-              </Node>
+          <Node name="GarageManagement" expanded="True" selected="True">
+            <Node name="GarageManagement.Domain">
               <Node name="Interfaces" expanded="True" />
             </Node>
-            <Node name="GarageManagement.Infrastructure" expanded="True">
+            <Node name="GarageManagement.Infrastructure">
               <Node name="Dependencies" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="ServiceExtension" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.GarageManagement.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

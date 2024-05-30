@@ -22,6 +22,101 @@ namespace GarageManagement.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.BusinessDetails", b =>
+                {
+                    b.Property<string>("BusinessDetailsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("BusinessDetailsName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("TypeOfBusinessDetailsId")
+                        .IsRequired()
+                        .HasColumnType("varchar(10)");
+
+                    b.HasKey("BusinessDetailsId");
+
+                    b.ToTable("Business");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.CompanyInfo", b =>
+                {
+                    b.Property<int>("CompanyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CompanyId"), 1L, 1);
+
+                    b.Property<string>("CompanyAddress")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("CompanyEmail")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("CompanyPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<string>("CompanyTax")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("CompanyWeb")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("NotePrice")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(MAX)");
+
+                    b.HasKey("CompanyId");
+
+                    b.ToTable("CompanyInfoDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.CustomerInfo", b =>
+                {
+                    b.Property<string>("CustomerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("CustomerAddress")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("CustomerPhonenumber")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("CustomerTax")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("CustomerId");
+
+                    b.ToTable("CustomerInfoDb");
+                });
+
             modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.DepartmentDetails", b =>
                 {
                     b.Property<string>("DepartmentId")
@@ -40,6 +135,70 @@ namespace GarageManagement.Infrastructure.Migrations
                     b.HasKey("DepartmentId");
 
                     b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.Factory", b =>
+                {
+                    b.Property<int>("FactoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FactoryId"), 1L, 1);
+
+                    b.Property<string>("FactoryName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("Note")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.HasKey("FactoryId");
+
+                    b.ToTable("Factories");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.Insurance", b =>
+                {
+                    b.Property<string>("InsuranceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("InsuranceAddress")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("InsuranceBank")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("InsuranceBranch")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("InsuranceName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("InsuranceNumberAccount")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("InsuranceTax")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("InsuranceId");
+
+                    b.ToTable("Insurances");
                 });
 
             modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.RoleDetails", b =>
@@ -154,6 +313,161 @@ namespace GarageManagement.Infrastructure.Migrations
                     b.HasKey("SupplierId");
 
                     b.ToTable("Suppliers");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.Vehicle", b =>
+                {
+                    b.Property<string>("TypeOfVehicleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("NameOfVehicle")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("Note")
+                        .HasMaxLength(2000)
+                        .HasColumnType("int");
+
+                    b.HasKey("TypeOfVehicleId");
+
+                    b.ToTable("Vehicles");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.VehicleDetails", b =>
+                {
+                    b.Property<string>("VehicleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("ChassisNumber")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("LicensePlates")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("TypeOfVehicleId")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("VehicleColor")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("VehicleNumber")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("VehicleId");
+
+                    b.ToTable("VehicleDetailsDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.InboundManagement.Inbound", b =>
+                {
+                    b.Property<string>("InvoiceEnterId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<DateTime>("DayEnter")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("InvoiceCode")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("RepairCodeId")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("StaffId")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("SupplierId")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("VAT")
+                        .HasColumnType("float");
+
+                    b.HasKey("InvoiceEnterId");
+
+                    b.ToTable("InboundDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.InboundManagement.SparePart", b =>
+                {
+                    b.Property<string>("SparePartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("SparePartContent")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("SparePartName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("SparePartId");
+
+                    b.ToTable("SparePartDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.InboundManagement.SparePartDetails", b =>
+                {
+                    b.Property<string>("SparePartDetailsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("SparePartDetailsName")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SparePartDetailsOtherName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("SparePartId")
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<string>("SparePartPosition")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<double>("SparePartPrice")
+                        .HasColumnType("float");
+
+                    b.Property<string>("SparePartSupplierId")
+                        .IsRequired()
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<string>("SparePartUnitCal")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("SparePartDetailsId");
+
+                    b.ToTable("SparePartDetailsDb");
                 });
 #pragma warning restore 612, 618
         }

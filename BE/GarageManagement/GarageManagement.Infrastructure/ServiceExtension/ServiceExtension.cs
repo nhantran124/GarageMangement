@@ -14,7 +14,16 @@ namespace GarageManagement.Infrastructure.Extensions
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IStaffRepository, StaffRepository>();
             services.AddScoped<ISupplierRepository, SupplierRepository>();
-
+            services.AddScoped<IFactoryRepository, FactoryRepository>();
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
+            services.AddScoped<IVehicleDetailsRepository, VehicleDetailsRepository>();
+            services.AddScoped<IBusinessDetailsRepository, BusinessDetailsRepository>();
+            services.AddScoped<IInsuranceRepository, InsuranceRepository>();
+            services.AddScoped<ICompanyInfoRepository, CompanyInfoRepository>();
+            services.AddScoped<ICustomerInfoRepository, CustomerInfoRepository>();
+            services.AddScoped<ISparePartRepository, SparePartRepository>();
+            services.AddScoped<ISparePartDetailsRepository, SparePartDetailsRepository>();
+            services.AddScoped<IInboundRepository, InboundRepository>();
             return services;
         }
     }

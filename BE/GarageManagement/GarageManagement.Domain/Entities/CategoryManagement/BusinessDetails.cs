@@ -4,19 +4,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GarageManagement.Domain.Entities.CategoryManagement
 {
-	public class Task
+	public class BusinessDetails
 	{
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(TypeName = "varchar(15)")]
         [Required]
-        public string TaskId { get; set; }
+        public string BusinessDetailsId { get; set; } = DateTime.Now.ToString("yyyyMMddHHmmss");
 
         [StringLength(255)]
-        public string TaskName { get; set; }
+        public string BusinessDetailsName { get; set; }
 
         [Column(TypeName = "varchar(10)")]
-        public int TypeOfTask { get; set; }
+        public string TypeOfBusinessDetailsId { get; set; }
     }
 }
 

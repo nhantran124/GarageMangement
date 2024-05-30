@@ -10,10 +10,12 @@
     <None Remove="Entities\" />
     <None Remove="Interfaces\" />
     <None Remove="Entities\CategoryManagement\" />
+    <None Remove="Entities\InboundManagement\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Entities\CategoryManagement\" />
+    <Folder Include="Entities\InboundManagement\" />
   </ItemGroup>
 </Project>
