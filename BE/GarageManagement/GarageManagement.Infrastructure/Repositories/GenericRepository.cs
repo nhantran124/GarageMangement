@@ -7,7 +7,7 @@ namespace GarageManagement.Infrastructure.Repositories
 {
     public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly DataContext _dataContext;
+        protected readonly DataContext _dataContext;
         protected GenericRepository(DataContext dataContext)
         {
             _dataContext = dataContext;

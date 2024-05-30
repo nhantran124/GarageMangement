@@ -10,19 +10,19 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(TypeName = "varchar(15)")]
         [Required]
-        public string InsuranceId { get; set; }
+        public string InsuranceId { get; set; } = DateTime.Now.ToString("yyyyMMddHHmmss");
 
         [StringLength(255)]
         [Required]
         public string InsuranceName { get; set; }
 
-        [Column(TypeName = "varchar(50)")]
+        [StringLength(50)]
         public string InsuranceTax { get; set; }
 
         [StringLength(500)]
         public string InsuranceAddress { get; set; }
 
-        [Column(TypeName = "varchar(50)")]
+        [StringLength(50)]
         public string InsuranceNumberAccount { get; set; }
 
         [StringLength(255)]

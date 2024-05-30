@@ -9,16 +9,16 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
-        public int CompanyId { get; set; }
+        public int CompanyId { get; set; } 
 
         [StringLength(150)]
         public string CompanyName { get; set; }
 
         [StringLength(150)]
-        public string InsuranceAddress { get; set; }
+        public string CompanyAddress { get; set; }
             
         [Column(TypeName = "varchar(30)")]
-        public string CompanyPhonenumber { get; set; }
+        public string CompanyPhoneNumber { get; set; }
 
         [StringLength(150)]
         public string CompanyEmail { get; set; }

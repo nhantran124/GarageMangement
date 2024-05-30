@@ -21,6 +21,16 @@ builder.Services.AddDIServices();
 builder.Services.AddScoped<IDepartmentApp, DepartmentApp>();
 builder.Services.AddScoped<IStaffApp, StaffApp>();
 builder.Services.AddScoped<ISupplierApp, SupplierApp>();
+builder.Services.AddScoped<IFactoryApp, FactoryApp>();
+builder.Services.AddScoped<IVehicleApp, VehicleApp>();
+builder.Services.AddScoped<IVehicleDetailsApp, VehicleDetailsApp>();
+builder.Services.AddScoped<IBusinessDetailsApp, BusinessDetailsApp>();
+builder.Services.AddScoped<IInsuranceApp, InsuranceApp>();
+builder.Services.AddScoped<ICompanyInfoApp, CompanyInfoApp>();
+builder.Services.AddScoped<ICustomerInfoApp, CustomerInfoApp>();
+builder.Services.AddScoped<ISparePartApp, SparePartApp>();
+builder.Services.AddScoped<ISparePartDetailsApp, SparePartDetailsApp>();
+builder.Services.AddScoped<IInboundApp, InboundApp>();
 
 var app = builder.Build();
 

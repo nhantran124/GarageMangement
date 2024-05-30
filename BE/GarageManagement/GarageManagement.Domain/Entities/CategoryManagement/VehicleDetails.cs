@@ -3,29 +3,29 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GarageManagement.Domain.Entities.CategoryManagement
 {
-    public class AccessControlSystem
+    public class VehicleDetails
 	{
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(TypeName = "varchar(15)")]
         [Required]
-        public string VehicleId { get; set; }
+        public string VehicleId { get; set; } = DateTime.Now.ToString("yyyyMMddHHmmss");
 
         [Required]
         [Column(TypeName = "varchar(20)")]
         public string TypeOfVehicleId { get; set; }
 
         [Column(TypeName = "varchar(20)")]
-        public int LicensePlates { get; set; }
+        public string LicensePlates { get; set; }
 
         [Column(TypeName = "varchar(20)")]
-        public int VehicleNumber { get; set; }
+        public string VehicleNumber { get; set; }
 
         [Column(TypeName = "varchar(50)")]
-        public int ChassisNumber { get; set; }
+        public string ChassisNumber { get; set; }
 
         [StringLength(255)]
-        public int VehicleColor { get; set; }
+        public string VehicleColor { get; set; }
     }
 }
 

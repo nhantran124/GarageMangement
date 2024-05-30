@@ -6,79 +6,83 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GarageManagement.Api.Controllers
 {
-        [Route("api/department")]
-        [ApiController]
-        public class DepartmentsController : ControllerBase
+    [Route("api/department")]
+    [ApiController]
+    public class DepartmentsController : ControllerBase
+    {
+        private readonly IDepartmentApp _departmentApp;
+
+        public DepartmentsController(IDepartmentApp departmentApp)
         {
-            private readonly IDepartmentApp _departmentApp;
+            _departmentApp = departmentApp;
+        }
 
-            public DepartmentsController(IDepartmentApp departmentApp)
+        [HttpGet]
+        public async Task<IActionResult> GetAllDepartment()
+        {
+            var departmentDetails = await _departmentApp.GetAllDepartments();
+            if (departmentDetails == null)
             {
-                _departmentApp = departmentApp;
+                return NotFound();
             }
+            return Ok(departmentDetails);
+        }
 
-            [HttpGet]
-            public async Task<IActionResult> GetAllDepartment()
+        [HttpGet("{DepartmentId}")]
+        public async Task<IActionResult> GetDepartmentById(string DepartmentId)
+        {
+            var departmentName = await _departmentApp.GetDepartmentById(DepartmentId);
+            if (departmentName == null)
             {
-                var departmentDetails = await _departmentApp.GetAllDepartments();
-                return Ok(departmentDetails);
+                return NotFound();
             }
+            return Ok(departmentName);
+        }
 
-            [HttpGet("{DepartmentId}")]
-            public async Task<IActionResult> GetDepartmentById(string DepartmentId)
+        [HttpPost]
+        public async Task<IActionResult> CreateDepartment(DepartmentDetails departmentDetails)
+        {
+            var DepartmentIsCreated = await _departmentApp.CreateDepartment(departmentDetails);
+
+            if (DepartmentIsCreated)
             {
-                var departmentName = await _departmentApp.GetDepartmentById(DepartmentId);
-                if (departmentName == null)
-                {
-                    return NotFound();
-                }
-                return Ok(departmentName);
+                return Ok(DepartmentIsCreated);
             }
-
-            [HttpPost]
-            public async Task<IActionResult> CreateDepartment(DepartmentDetails departmentDetails)
+            else
             {
-                var DepartmentIsCreated = await _departmentApp.CreateDepartment(departmentDetails);
-
-                if (DepartmentIsCreated)
-                {
-                    return Ok(DepartmentIsCreated);
-                }
-                else
-                {
-                    return BadRequest();
-                }
-            }
-
-            [HttpPut]
-            public async Task<IActionResult> UpdateDepartment(DepartmentDetails departmentDetails)
-            {
-                if (departmentDetails != null)
-                {
-                    var DepIstUpdated = await _departmentApp.UpdateDepartment(departmentDetails);
-                    if (DepIstUpdated)
-                    {
-                        return Ok(DepIstUpdated);
-                    }
-                    return BadRequest();
-                }
-                else
-                {
-                    return BadRequest();
-                }
-            }
-
-            [HttpDelete("{DepartmentId}")]
-            public async Task<IActionResult> DeleteDepartment(string DepartmentId)
-            {
-                
-                    var DepIstDeleted = await _departmentApp.DeleteDepartment(DepartmentId);
-                    if (DepIstDeleted)
-                    {
-                        return Ok(DepIstDeleted);
-                    }
-                    return BadRequest();
+                return BadRequest();
             }
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateDepartment(DepartmentDetails departmentDetails)
+        {
+            if (departmentDetails != null)
+            {
+                var DepIstUpdated = await _departmentApp.UpdateDepartment(departmentDetails);
+                if (DepIstUpdated)
+                {
+                    return Ok(DepIstUpdated);
+                }
+                return BadRequest();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete("{DepartmentId}")]
+        public async Task<IActionResult> DeleteDepartment(string DepartmentId)
+        {
+
+            var DepIstDeleted = await _departmentApp.DeleteDepartment(DepartmentId);
+            if (DepIstDeleted)
+            {
+                return Ok(DepIstDeleted);
+            }
+            return BadRequest();
+        }
+    }
 }
 

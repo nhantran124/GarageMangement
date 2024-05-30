@@ -1,5 +1,6 @@
 ﻿using System;
 using GarageManagement.Domain.Entities.CategoryManagement;
+using GarageManagement.Domain.Entities.InboundManagement;
 using Microsoft.EntityFrameworkCore;
 
 namespace GarageManagement.Infrastructure.Data
@@ -16,7 +17,16 @@ namespace GarageManagement.Infrastructure.Data
         public DbSet<DepartmentDetails> Departments { get; set; }
         public DbSet<Staff> Staff { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-
+        public DbSet<Factory> Factories { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<VehicleDetails> VehicleDetailsDb { get; set; }
+        public DbSet<BusinessDetails> Business { get; set; }
+        public DbSet<Insurance> Insurances { get; set; }
+        public DbSet<CompanyInfo> CompanyInfoDb { get; set; }
+        public DbSet<CustomerInfo> CustomerInfoDb { get; set; }
+        public DbSet<SparePart> SparePartDb { get; set; }
+        public DbSet<SparePartDetails> SparePartDetailsDb { get; set; }
+        public DbSet<Inbound> InboundDb { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
