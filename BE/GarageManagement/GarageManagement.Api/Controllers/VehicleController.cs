@@ -26,10 +26,10 @@ namespace GarageManagement.Api.Controllers
             return Ok(vehicleDetails);
         }
 
-        [HttpGet("{IDTypeOfVehicle}")]
-        public async Task<IActionResult> GetVehicleById(string IDTypeOfVehicle)
+        [HttpGet("{TypeOfVehicleId}")]
+        public async Task<IActionResult> GetVehicleById(string TypeOfVehicleId)
         {
-            var vehicleDetails = await _vehicleApp.GetVehicleById(IDTypeOfVehicle);
+            var vehicleDetails = await _vehicleApp.GetVehicleById(TypeOfVehicleId);
 
             if (vehicleDetails != null)
             {

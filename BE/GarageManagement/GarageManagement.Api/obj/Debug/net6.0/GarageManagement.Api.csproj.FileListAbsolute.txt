@@ -74,6 +74,10 @@
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/GarageManagement.Api.runtimeconfig.json
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/GarageManagement.Api.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/GarageManagement.Api.pdb
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -83,7 +87,10 @@
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
 /Users/Nhan_Dev/Documents/KLTN-Project/GarageMangement/BE/GarageManagement/GarageManagement.Api/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll

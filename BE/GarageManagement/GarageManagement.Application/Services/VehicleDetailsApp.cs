@@ -75,6 +75,7 @@ namespace GarageManagement.Application.Services
                 var ListVehicleComponents = await _unitOfWork.VehicleDetailsDb.GetById(vehicleDetails.VehicleId);
                 if (ListVehicleComponents != null)
                 {
+                    ListVehicleComponents.TypeOfVehicleId = vehicleDetails.TypeOfVehicleId;
                     ListVehicleComponents.LicensePlates = vehicleDetails.LicensePlates;
                     ListVehicleComponents.VehicleNumber = vehicleDetails.VehicleNumber;
                     ListVehicleComponents.ChassisNumber = vehicleDetails.ChassisNumber;

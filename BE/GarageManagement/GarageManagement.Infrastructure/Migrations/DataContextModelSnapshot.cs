@@ -326,9 +326,10 @@ namespace GarageManagement.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("Note")
+                    b.Property<string>("Note")
+                        .IsRequired()
                         .HasMaxLength(2000)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(2000)");
 
                     b.HasKey("TypeOfVehicleId");
 

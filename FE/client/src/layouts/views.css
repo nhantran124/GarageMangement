@@ -1,0 +1,57 @@
+/* views.css */
+.transition-transform {
+    transition: transform 0.3s ease;
+  }
+  
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .flex-no-wrap {
+    flex-wrap: nowrap;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .max-w-full {
+    max-width: 100%;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+ul li button,
+ul li a {
+  font-size: 14px; /* Kích thước chữ */
+  line-height: 1.5; /* Khoảng cách giữa các dòng */
+}
+
+.text-sm {
+    line-height: 40px;
+}

@@ -82,7 +82,7 @@ namespace GarageManagement.Application.Services
                     ListInsurancesComponent.InsuranceBank = insurance.InsuranceBank;
                     ListInsurancesComponent.InsuranceBranch = insurance.InsuranceBranch;
 
-                    _unitOfWork.Insurances.Update(insurance);
+                    _unitOfWork.Insurances.Update(ListInsurancesComponent);
 
                     var result = _unitOfWork.Save();
 

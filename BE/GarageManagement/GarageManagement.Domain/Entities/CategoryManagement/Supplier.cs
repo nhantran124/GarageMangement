@@ -32,7 +32,7 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
         public string SupplierBranch { get; set; }
 
         [Column(TypeName = "varchar(30)")]
-        public int AccountNumber { get; set; }
+        public string AccountNumber { get; set; }
 
     }
 }
