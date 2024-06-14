@@ -1,47 +1,76 @@
 ﻿<Properties StartupConfiguration="{88787D8B-6A07-4E72-BF71-F41AF1D57362}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.GarageManagement.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GarageManagement.Infrastructure/Data/DataContext.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GarageManagement.Domain/Entities/CategoryManagement/DepartmentDetails.cs">
     <Files>
-      <File FileName="GarageManagement.Domain/Interfaces/IVehicleRepository.cs" />
-      <File FileName="GarageManagement.Domain/Interfaces/IUnitOfWork.cs" />
-      <File FileName="GarageManagement.Infrastructure/Repositories/VehicleRepository.cs" />
-      <File FileName="GarageManagement.Infrastructure/ServiceExtension/ServiceExtension.cs" />
-      <File FileName="GarageManagement.Infrastructure/Repositories/UnitOfWork.cs" />
-      <File FileName="GarageManagement.Infrastructure/Repositories/GenericRepository.cs" />
-      <File FileName="GarageManagement.Application/Services/SupplierApp.cs" />
-      <File FileName="GarageManagement.Application/Interfaces/IFactoryApp.cs" />
-      <File FileName="GarageManagement.Application/Interfaces/ISupplierApp.cs" />
-      <File FileName="GarageManagement.Application/Services/StaffApp.cs" />
-      <File FileName="GarageManagement.Api/Controllers/SupplierController.cs" />
-      <File FileName="GarageManagement.Infrastructure/Migrations/DataContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="GarageManagement.Domain/Interfaces/IGenericRepository.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Infrastructure/Data/DataContext.cs" Line="11" Column="10" NotebookId="1" />
-      <File FileName="GarageManagement.Domain/Interfaces/IDepartmentRepository.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Infrastructure/Repositories/DepartmentRepository.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Application/Services/VehicleApp.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Application/Interfaces/IVehicleApp.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Domain/Entities/CategoryManagement/Vehicle.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Api/Controllers/VehicleController.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Api/Program.cs" NotebookId="1" />
-      <File FileName="GarageManagement.Infrastructure/Migrations/20240525035330_Migv4.cs" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Interfaces/ISparePartDetailsApp.cs" Line="16" Column="1" />
+      <File FileName="GarageManagement.Api/Program.cs" Line="19" Column="1" />
+      <File FileName="GarageManagement.Domain/Interfaces/IUnitOfWork.cs" Line="18" Column="2" />
+      <File FileName="GarageManagement.Infrastructure/Data/DataContext.cs" Line="27" Column="52" />
+      <File FileName="GarageManagement.Domain/Entities/InboundManagement/SparePart.cs" Line="1" Column="1" />
+      <File FileName="GarageManagement.Domain/Interfaces/IInboundRepository.cs" Line="10" Column="2" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/InboundRepository.cs" Line="16" Column="1" />
+      <File FileName="GarageManagement.Infrastructure/ServiceExtension/ServiceExtension.cs" Line="26" Column="73" />
+      <File FileName="GarageManagement.Application/Interfaces/IInboundApp.cs" Line="15" Column="2" />
+      <File FileName="GarageManagement.Application/Services/InboundApp.cs" Line="8" Column="2" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/GenericRepository.cs" Line="1" Column="1" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/UnitOfWork.cs" Line="24" Column="52" />
+      <File FileName="GarageManagement.Api/Controllers/InboundController.cs" Line="84" Column="34" />
+      <File FileName="GarageManagement.Domain/Entities/CategoryManagement/DepartmentDetails.cs" Line="14" Column="28" />
+      <File FileName="GarageManagement.Application/Interfaces/IBusinessDetailsApp.cs" Line="16" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Interfaces/ICustomerInfoRepository.cs" Line="12" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/CustomerInfoRepository.cs" Line="16" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Interfaces/ICustomerInfoApp.cs" Line="16" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/CustomerInfoController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Services/SparePartApp.cs" Line="91" Column="18" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Entities/InboundManagement/SparePartDetails.cs" Line="20" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/DepartmentController.cs" Line="34" Column="31" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/VehicleDetailsController.cs" Line="22" Column="35" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/FactoryController.cs" Line="35" Column="14" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/InsuranceController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/SparePartController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Api/Controllers/BusinessDetailsController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Entities/CategoryManagement/Supplier.cs" Line="15" Column="28" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Entities/CategoryManagement/Staff.cs" Line="10" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Interfaces/IBusinessDetailsRepository.cs" Line="12" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Infrastructure/Repositories/CompanyInfoRepository.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Interfaces/IInsuranceApp.cs" Line="14" Column="2" NotebookId="1" />
+      <File FileName="GarageManagement.Application/Services/InsuranceApp.cs" Line="87" Column="38" NotebookId="1" />
+      <File FileName="GarageManagement.Domain/Entities/InboundManagement/Inbound.cs" Line="14" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GarageManagement" expanded="True" selected="True">
-            <Node name="GarageManagement.Domain">
+          <Node name="GarageManagement" expanded="True">
+            <Node name="GarageManagement.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="GarageManagement.Application" expanded="True">
+              <Node name="Authentication" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="GarageManagement.Domain" expanded="True">
+              <Node name="Entities" expanded="True">
+                <Node name="CategoryManagement" expanded="True">
+                  <Node name="DepartmentDetails.cs" selected="True" />
+                </Node>
+                <Node name="InboundManagement" expanded="True" />
+              </Node>
               <Node name="Interfaces" expanded="True" />
             </Node>
-            <Node name="GarageManagement.Infrastructure">
-              <Node name="Dependencies" expanded="True" />
+            <Node name="GarageManagement.Infrastructure" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
               <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="ServiceExtension" expanded="True" />
             </Node>
@@ -50,4 +79,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GarageManagement.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -17,7 +17,7 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
         public string NameOfVehicle { get; set; }
 
         [StringLength(2000)]
-        public int Note { get; set; }
+        public string Note { get; set; }
     }
 }
 
