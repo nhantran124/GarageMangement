@@ -9,22 +9,54 @@ body {
     box-sizing: border-box;
 }
 
+nav {
+    width: 20%; /* Điều chỉnh theo kích thước sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
 .main-content {
     margin-left: 20%;   
     width: 80%;
     padding: 20px;
-    
+    height: 100vh;
 }
 
 .extended-width {
     width: 200%;
+    margin-left: 90%;
+    height: 100vh;
+}
+
+.vehicle-list-details {
+    width: 200%;
     margin-left: 60%;
 }
 
-.vehicle-details, .business-details {
+.perrmission-details {
+    width: 200%;
+    margin-left: 60%;
+    height: 100vh;
+}
+
+.vehicle-details, 
+.business-details,
+.customer-details {
     margin-left: 30%;   
     padding: 20px;
+    height: 100vh;
 }
+
+.spareparts-details,
+.access-details {
+    width: 120%;
+    margin-left: 35%;   
+    padding: 20px;
+    height: 100vh;
+}
+
 
 
 

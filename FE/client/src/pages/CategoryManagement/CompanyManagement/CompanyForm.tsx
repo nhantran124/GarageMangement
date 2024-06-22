@@ -101,7 +101,7 @@ const CompanyForm: React.FC<any> = ({ initialData = {}, onSubmit, onCancel }) =>
 
                     <div className="w-full px-2 mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="notePrice">
-                            Báo giá
+                            Price
                             {/* <span className="text-red-500">*</span> */}
                         </label>
                         <input

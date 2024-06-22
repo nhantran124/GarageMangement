@@ -2,6 +2,7 @@
 using GarageManagement.Domain.Interfaces;
 using GarageManagement.Infrastructure.Repositories;
 
+
 namespace GarageManagement.Infrastructure.Extensions
 {
     public static class ServiceCollectionExtensions
@@ -24,6 +25,11 @@ namespace GarageManagement.Infrastructure.Extensions
             services.AddScoped<ISparePartRepository, SparePartRepository>();
             services.AddScoped<ISparePartDetailsRepository, SparePartDetailsRepository>();
             services.AddScoped<IInboundRepository, InboundRepository>();
+            services.AddScoped<IAccessoryWarehouseRepository, AccessoryWarehouseRepository>();
+            services.AddScoped<IAccessDetailsRepository, AccessDetailsRepository>();
+            services.AddScoped<IRoleDetailsRepository, RoleDetailsRepository>();
+            services.AddScoped<IPermissionDetailsRepository, PermissionDetailsRepository>();
+            services.AddScoped<IRepairBillRepository, RepairBillRepository>();
             return services;
         }
     }

@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import garageLogo from '../assets/garage-logo.png';
 import garageBackground from '../assets/basic-bg.jpeg';
+import {faRightFromBracket, faUserLock, faUser} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   const handleLogout = () => {
-    // Xử lý đăng xuất người dùng
+    // Xóa token từ localStorage
+    localStorage.removeItem('token');
+    // Đóng dropdown
+    setIsDropdownOpen(false);
+    // Chuyển hướng về trang đăng nhập
+    navigate('/');
   };
 
   const handleInfoUser = () => {
@@ -49,13 +59,13 @@ const Header: React.FC = () => {
             <ul>
               <li>
                 <button onClick={handleInfoUser} className="block px-4 py-2 text-gray-800 hover:bg-violet-400 w-full text-left">
-                  Thông tin người dùng
+                <FontAwesomeIcon icon={faUser}/> Thông tin người dùng
                 </button>
                 <button onClick={handleInfoUser} className="block px-4 py-2 text-gray-800 hover:bg-violet-400 w-full text-left">
-                  Thay đổi mật khẩu
+                <FontAwesomeIcon icon={faUserLock}/> Thay đổi mật khẩu
                 </button>
                 <button onClick={handleLogout} className="block px-4 py-2 text-gray-800 hover:bg-violet-400 w-full text-left">
-                  Logout
+                <FontAwesomeIcon icon={faRightFromBracket}/> Logout
                 </button>
               </li>
             </ul>

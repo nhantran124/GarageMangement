@@ -1,4 +1,5 @@
 ﻿using System;
+using GarageManagement.Domain.Entities.CategoryManagement;
 using GarageManagement.Domain.Interfaces;
 using GarageManagement.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -17,10 +18,6 @@ namespace GarageManagement.Infrastructure.Repositories
         {
             return await _dataContext.Set<T>().ToListAsync();
         }
-        //public async Task<UserDetails> GetUserByUsername(string username)
-        //{
-        //    return await _dataContext.Users.FirstOrDefaultAsync(u => u.Username == username);
-        //}
         public async Task Add(T entity)
         {
             await _dataContext.Set<T>().AddAsync(entity);
@@ -37,6 +34,11 @@ namespace GarageManagement.Infrastructure.Repositories
         public async Task<T> GetById(string id)
         {
             return await _dataContext.Set<T>().FindAsync(id);
+        }
+
+        public async Task<Staff> GetUserByUsername(string username)
+        {
+            return await _dataContext.Staff.FirstOrDefaultAsync(u => u.Username == username);
         }
     }
 }

@@ -6,7 +6,7 @@ const VehicleList: React.FC<any> = (props) => {
     const { vehicleList, onEdit, onDelete, setSelectedVehicle, setShowForm } = props;
 
     return (
-      <div className="main-content extended-width h-full w-full p-4 mt-20 ">
+      <div className="vehicle-list-details h-screen w-full p-4 mt-20 ">
         <div className="flex justify-between items-center">
           <h2 className="text-[25px] leading-normal font-bold mb-4">
             QUẢN LÝ LOẠI XE

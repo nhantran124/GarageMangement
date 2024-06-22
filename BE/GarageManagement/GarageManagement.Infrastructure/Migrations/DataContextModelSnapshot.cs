@@ -22,6 +22,80 @@ namespace GarageManagement.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("GarageManagement.Domain.Entities.Authorization.AccessDetails", b =>
+                {
+                    b.Property<int>("AccessId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AccessId"), 1L, 1);
+
+                    b.Property<string>("AccessURL")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<int>("PermissionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PermissionSymbol")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("PermissionURL")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AccessId");
+
+                    b.ToTable("AccessDetailsDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.Authorization.PermissionDetails", b =>
+                {
+                    b.Property<int>("PermissionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PermissionId"), 1L, 1);
+
+                    b.Property<string>("PermissionName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("PermissionSymbol")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("PermissionId");
+
+                    b.ToTable("PermissionDetailsDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.Authorization.RoleDetails", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"), 1L, 1);
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("RoleDetailsDb");
+                });
+
             modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.BusinessDetails", b =>
                 {
                     b.Property<string>("BusinessDetailsId")
@@ -201,23 +275,6 @@ namespace GarageManagement.Infrastructure.Migrations
                     b.ToTable("Insurances");
                 });
 
-            modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.RoleDetails", b =>
-                {
-                    b.Property<int>("RoleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"), 1L, 1);
-
-                    b.Property<int>("PremissionGroupName")
-                        .HasMaxLength(255)
-                        .HasColumnType("int");
-
-                    b.HasKey("RoleId");
-
-                    b.ToTable("Roles");
-                });
-
             modelBuilder.Entity("GarageManagement.Domain.Entities.CategoryManagement.Staff", b =>
                 {
                     b.Property<string>("StaffId")
@@ -368,6 +425,43 @@ namespace GarageManagement.Infrastructure.Migrations
                     b.ToTable("VehicleDetailsDb");
                 });
 
+            modelBuilder.Entity("GarageManagement.Domain.Entities.InboundManagement.AccessoryWarehouse", b =>
+                {
+                    b.Property<string>("SupplierSparePartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Barcode")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<DateTime?>("DayEnter")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double?>("InputPrice")
+                        .HasColumnType("float");
+
+                    b.Property<string>("InvoiceEnterId")
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<double?>("Quantity")
+                        .HasColumnType("float");
+
+                    b.Property<string>("RepairCardId")
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("SparePartDetailsId")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("SupplierId")
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("SupplierSparePartId");
+
+                    b.ToTable("AccessoryWarehouseDb");
+                });
+
             modelBuilder.Entity("GarageManagement.Domain.Entities.InboundManagement.Inbound", b =>
                 {
                     b.Property<string>("InvoiceEnterId")
@@ -469,6 +563,111 @@ namespace GarageManagement.Infrastructure.Migrations
                     b.HasKey("SparePartDetailsId");
 
                     b.ToTable("SparePartDetailsDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.MaintenanceManagement.RepairBill", b =>
+                {
+                    b.Property<int>("RepairCardId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RepairCardId"), 1L, 1);
+
+                    b.Property<string>("Censor")
+                        .HasMaxLength(520)
+                        .HasColumnType("nvarchar(520)");
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<DateTime>("DateEntryCard")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FactoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("InsuranceId")
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("InvoiceNumber")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<double?>("Kilometer")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Note")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<int>("SearchWarrant")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StaffId")
+                        .IsRequired()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<decimal>("TaxGTGT")
+                        .HasColumnType("decimal(18,0)");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,0)");
+
+                    b.Property<string>("VehicleId")
+                        .IsRequired()
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("VehicleReturnDate")
+                        .IsRequired()
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("RepairCardId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("FactoryId");
+
+                    b.HasIndex("StaffId");
+
+                    b.HasIndex("VehicleId");
+
+                    b.ToTable("RepairBillDb");
+                });
+
+            modelBuilder.Entity("GarageManagement.Domain.Entities.MaintenanceManagement.RepairBill", b =>
+                {
+                    b.HasOne("GarageManagement.Domain.Entities.CategoryManagement.CustomerInfo", "CustomerInfo")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("GarageManagement.Domain.Entities.CategoryManagement.Factory", "Factory")
+                        .WithMany()
+                        .HasForeignKey("FactoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GarageManagement.Domain.Entities.CategoryManagement.Staff", "Staff")
+                        .WithMany()
+                        .HasForeignKey("StaffId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("GarageManagement.Domain.Entities.CategoryManagement.VehicleDetails", "VehicleDetails")
+                        .WithMany()
+                        .HasForeignKey("VehicleId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("CustomerInfo");
+
+                    b.Navigation("Factory");
+
+                    b.Navigation("Staff");
+
+                    b.Navigation("VehicleDetails");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,8 +1,9 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GarageManagement.Domain.Entities.CategoryManagement
+namespace GarageManagement.Domain.Entities.Authorization
 {
 	public class RoleDetails
 	{
@@ -11,9 +12,8 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
         [Required]
         public int RoleId { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public int PremissionGroupName { get; set; }
+        [StringLength(50)]
+        public string RoleName { get; set; }
     }
 }
 

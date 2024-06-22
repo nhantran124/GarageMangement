@@ -80,7 +80,7 @@ namespace GarageManagement.Application.Services
                     ListCustomerComponent.CustomerAddress = customerInfo.CustomerAddress;
                     ListCustomerComponent.CustomerPhonenumber = customerInfo.CustomerPhonenumber;
                     ListCustomerComponent.CustomerTax = customerInfo.CustomerPhonenumber;
-                    _unitOfWork.CustomerInfos.Update(customerInfo);
+                    _unitOfWork.CustomerInfos.Update(ListCustomerComponent);
 
                     var result = _unitOfWork.Save();
 

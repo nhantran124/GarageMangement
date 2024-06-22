@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace GarageManagement.Domain.Interfaces
 {
 	public interface IUnitOfWork : IDisposable
@@ -16,7 +17,13 @@ namespace GarageManagement.Domain.Interfaces
 		ISparePartRepository SpareParts { get;  }
 		ISparePartDetailsRepository SparePartsDetails { get; }
 		IInboundRepository Inbounds { get; }
+		IAccessoryWarehouseRepository AccessoriesWarehouse { get; }
+		IAccessDetailsRepository Access { get; }
+		IRoleDetailsRepository Roles { get; }
+		IPermissionDetailsRepository Permission { get; }
+		IRepairBillRepository RepairBills { get; }
 		int Save();
-	}
+        Task<int> SaveAsync();
+    }
 }
 

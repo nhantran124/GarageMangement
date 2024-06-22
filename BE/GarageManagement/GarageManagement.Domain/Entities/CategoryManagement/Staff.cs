@@ -2,11 +2,12 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
 
 namespace GarageManagement.Domain.Entities.CategoryManagement
 {
 	public class Staff
-	{
+    {
 
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -37,8 +38,8 @@ namespace GarageManagement.Domain.Entities.CategoryManagement
 
 		[StringLength(512)]
 		public string Password { get; set; }
-	
-		public int AccountActive { get; set; }
+
+        public int AccountActive { get; set; }
 
 		[Column(TypeName = "date")]
 		public DateTime DayIn { get; set; }

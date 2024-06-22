@@ -7,14 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Authentication\" />
     <None Remove="Interfaces\" />
     <None Remove="Services\" />
+    <None Remove="DTO\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Authentication\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
+    <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GarageManagement.Domain\GarageManagement.Domain.csproj" />

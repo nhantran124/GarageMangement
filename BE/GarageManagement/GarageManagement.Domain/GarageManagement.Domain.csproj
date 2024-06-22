@@ -11,11 +11,18 @@
     <None Remove="Interfaces\" />
     <None Remove="Entities\CategoryManagement\" />
     <None Remove="Entities\InboundManagement\" />
+    <None Remove="Entities\Authorization\" />
+    <None Remove="Entities\MaintenanceManagement\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Entities\CategoryManagement\" />
     <Folder Include="Entities\InboundManagement\" />
+    <Folder Include="Entities\Authorization\" />
+    <Folder Include="Entities\MaintenanceManagement\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.30" />
   </ItemGroup>
 </Project>

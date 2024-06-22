@@ -5,7 +5,6 @@ using GarageManagement.Infrastructure.Data;
 namespace GarageManagement.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
-
     {
         private readonly DataContext _dataContext;
 
@@ -19,9 +18,14 @@ namespace GarageManagement.Infrastructure.Repositories
         public IInsuranceRepository Insurances { get; }
         public ICompanyInfoRepository CompanyInfos { get; }
         public ICustomerInfoRepository CustomerInfos { get; }
-        public ISparePartRepository  SpareParts { get; }
+        public ISparePartRepository SpareParts { get; }
         public ISparePartDetailsRepository SparePartsDetails { get; }
         public IInboundRepository Inbounds { get; }
+        public IAccessoryWarehouseRepository AccessoriesWarehouse { get; }
+        public IAccessDetailsRepository Access { get; } // Thuộc tính này phải có
+        public IRoleDetailsRepository Roles { get; }
+        public IPermissionDetailsRepository Permission { get; }
+        public IRepairBillRepository RepairBills { get; }
 
         public UnitOfWork(DataContext dataContext,
             IDepartmentRepository departmentRepository,
@@ -36,9 +40,12 @@ namespace GarageManagement.Infrastructure.Repositories
             ICustomerInfoRepository customerInfoRepository,
             ISparePartRepository sparePartRepository,
             ISparePartDetailsRepository sparePartDetailsRepository,
-            IInboundRepository inboundRepository
-            )
-
+            IInboundRepository inboundRepository,
+            IAccessoryWarehouseRepository accessoryWarehouseRepository,
+            IAccessDetailsRepository accessDetailsRepository,
+            IRoleDetailsRepository roleDetailsRepository,
+            IPermissionDetailsRepository permissionDetailsRepository,
+            IRepairBillRepository repairBillRepository)
         {
             _dataContext = dataContext;
             Departments = departmentRepository;
@@ -54,18 +61,29 @@ namespace GarageManagement.Infrastructure.Repositories
             SpareParts = sparePartRepository;
             SparePartsDetails = sparePartDetailsRepository;
             Inbounds = inboundRepository;
+            AccessoriesWarehouse = accessoryWarehouseRepository;
+            Access = accessDetailsRepository;
+            Roles = roleDetailsRepository;
+            Permission = permissionDetailsRepository;
+            RepairBills = repairBillRepository;
         }
-
 
         public int Save()
         {
             return _dataContext.SaveChanges();
         }
+
+        public async Task<int> SaveAsync()
+        {
+            return await _dataContext.SaveChangesAsync();
+        }
+
         public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)
@@ -75,4 +93,3 @@ namespace GarageManagement.Infrastructure.Repositories
         }
     }
 }
-
